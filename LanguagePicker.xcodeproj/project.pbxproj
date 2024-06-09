@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3763A5AF2BDFEC9C00F82503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37683C0F2B9E294D008B1F04 /* Assets.xcassets */; };
-		3767EFEB2C0FD2950039CF55 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767EFEA2C0FD2950039CF55 /* SettingView.swift */; };
 		37683C0A2B9E294B008B1F04 /* LanguagePickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37683C092B9E294B008B1F04 /* LanguagePickerApp.swift */; };
 		37683C0C2B9E294B008B1F04 /* LanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37683C0B2B9E294B008B1F04 /* LanguagePickerView.swift */; };
 		37683C0E2B9E294B008B1F04 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37683C0D2B9E294B008B1F04 /* Item.swift */; };
 		37683C132B9E294D008B1F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37683C122B9E294D008B1F04 /* Preview Assets.xcassets */; };
+		37A725922C160D0F000878D6 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A725912C160D0F000878D6 /* LanguageModel.swift */; };
+		37A725942C1611C2000878D6 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A725932C1611C2000878D6 /* ApplicationMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3767EFEA2C0FD2950039CF55 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		37683C062B9E294B008B1F04 /* LanguagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37683C092B9E294B008B1F04 /* LanguagePickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerApp.swift; sourceTree = "<group>"; };
 		37683C0B2B9E294B008B1F04 /* LanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerView.swift; sourceTree = "<group>"; };
@@ -25,6 +25,8 @@
 		37683C122B9E294D008B1F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37683C142B9E294D008B1F04 /* LanguagePicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LanguagePicker.entitlements; sourceTree = "<group>"; };
 		37683C1C2B9E378F008B1F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		37A725912C160D0F000878D6 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		37A725932C1611C2000878D6 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				37683C1C2B9E378F008B1F04 /* Info.plist */,
+				37A725932C1611C2000878D6 /* ApplicationMenu.swift */,
 				37683C092B9E294B008B1F04 /* LanguagePickerApp.swift */,
-				3767EFEA2C0FD2950039CF55 /* SettingView.swift */,
+				37A725912C160D0F000878D6 /* LanguageModel.swift */,
 				37683C0B2B9E294B008B1F04 /* LanguagePickerView.swift */,
 				37683C0D2B9E294B008B1F04 /* Item.swift */,
 				37683C0F2B9E294D008B1F04 /* Assets.xcassets */,
@@ -105,7 +108,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					37683C052B9E294B008B1F04 = {
 						CreatedOnToolsVersion = 15.1;
@@ -148,9 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37683C0C2B9E294B008B1F04 /* LanguagePickerView.swift in Sources */,
-				3767EFEB2C0FD2950039CF55 /* SettingView.swift in Sources */,
+				37A725942C1611C2000878D6 /* ApplicationMenu.swift in Sources */,
 				37683C0E2B9E294B008B1F04 /* Item.swift in Sources */,
 				37683C0A2B9E294B008B1F04 /* LanguagePickerApp.swift in Sources */,
+				37A725922C160D0F000878D6 /* LanguageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +195,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -254,6 +259,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -285,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"LanguagePicker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -315,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"LanguagePicker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
