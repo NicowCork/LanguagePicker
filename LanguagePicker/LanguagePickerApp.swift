@@ -26,7 +26,6 @@ struct LanguagePickerApp: App {
 class AppDelegate: NSObject, NSApplicationDelegate {
     static private(set) var instance: AppDelegate!
     lazy var statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    var popover = NSPopover()
     let appMenu = ApplicationMenu()
     
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -38,8 +37,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBarItem.button?.imagePosition = .imageLeading
         statusBarItem.button?.frame.size = CGSize(width: 16, height: 16)
         statusBarItem.menu = menu
-        
-        popover.contentViewController = NSViewController()
-        popover.contentViewController?.view = NSHostingView(rootView: LanguagePickerView(model: appMenu.languageModel))
     }
 }

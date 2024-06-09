@@ -57,6 +57,6 @@ struct LanguagePickerView: View {
                 Text("Japanese")
                     .foregroundColor(model.currentLanguage == .ja ? .green : .white)
             }
-        }
+        }.padding(10)
     }
 }
